@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survival Rate</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+<div class="opening">
+<br>
+  <h1>
+<u>Passengers Survival Rate</u>
+</h1>
+</div>
+
+<div class="chart alive">
+  <p>Survived:<br>&emsp;38%</p>
+</div>
+<div class="survived">
+<h2>
+Survival Count: 500
+</h2>
+</div>
+<div class="chart dead">
+  <p>Death:<br>&ensp;62%</p>
+</div>
+<div class="casualties">
+<h2>
+Casualty Count: 809
+</h2>
+<button class="btnback"><a href="https://ktea12.github.io/Front%20Web.html">GO BACK</a></button>
+</div>
+</body>
+</html>
+
+<style>
+  html, head, body {
+  background-color: lightblue;
+}
+
+:root {
+  --size: 200px;
+  --bord: 30px;
+}
+
+.opening{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.survived{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.casualties{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.chart {
+  width: var(--size);
+  height: var(--size);
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: var(--bord) solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(lightblue, lightyellow) padding-box, conic-gradient(rgb(145, 0, 202) var(--value), white var(--value)) border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.alive {
+  --value: 38%;
+}
+
+.dead {
+  --value: 62%;
+}
+
+.btnback {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+  border: none;
+  background-color: lightblue;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btnback:hover {
+  background: rgb(255, 255, 255, 0.7);
+}
+</style>
