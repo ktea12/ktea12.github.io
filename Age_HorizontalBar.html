@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passenger Age</title>
+  <link rel="stylesheet" href=""/>
+</head>
+<h1><u>Age of Passengers Chart</u></h1>
+
+<body>
+<ul class="graph">
+  <li>
+    <div class="elder" style="width: 3%">Eldelry</div>
+    <div class="percente">3%</div>
+    <div class="total">Over 60 Years Old</div>
+  </li>
+  
+  <li>
+    <div class="adult" style="width: 73%">Adults</div>
+    <div class="percenta">73%</div>
+    <div class="total">21 - 60 Years Old</div>
+  </li>
+
+  <li>
+    <div class="teen" style="width: 16%">Teens and Children</div>
+    <div class="percentt">16%</div>
+    <div class="total">10 - 20 Years Old</div>
+  </li>
+  
+  <li>
+    <div class="child" style="width: 8%">Toddlers and Infants</div>
+    <div class="percentc">8%</div>
+    <div class="total">Less than 10 Years Old</div>
+  </li>
+</ul>
+<div class="back">
+  <button class="btnback"><a href="https://ktea12.github.io/Front%20Web.html">GO BACK</a></button>
+</div>
+</body>
+</html>
+
+<style>
+  html, head, body {
+  background-color: lightblue;
+}
+
+.graph {
+  padding: 0;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #888;
+}
+
+.graph li {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid #888;
+  clear: both;
+}
+
+.elder {
+  display: block;
+  padding: 2em;
+  position: relative;
+  color: #222;
+  background: #6983f8;
+  font-weight: bold;
+  float: left;
+}
+
+.adult {
+  display: block;
+  padding: 2em;
+  position: relative;
+  color: #222;
+  background: #6264ec;
+  font-weight: bold;
+  float: left;
+}
+.teen {
+  display: block;
+  padding: 2em;
+  position: relative;
+  color: #222;
+  background: #7f66ee;
+  font-weight: bold;
+  float: left;
+}
+
+.child {
+  display: block;
+  padding: 1.3em;
+  position: relative;
+  color: #222;
+  background: #a166ee;
+  font-weight: bold;
+  float: left;
+}
+
+.total {
+  margin-top: 10px;
+  float: right;
+}
+
+.percente, .percenta, .percentt, .percentc {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 25px;
+  float: left;
+}
+
+.btnback {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+  border: none;
+  background-color: lightblue;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btnback:hover {
+  background: rgb(255, 255, 255, 0.7);
+}
+
+.percente:hover {
+  color: #6983f8;
+  font-weight: bold;
+}
+.percenta:hover {
+  color: #6264ec;
+  font-weight: bold;
+}
+.percentt:hover {
+  color: #7f66ee;
+  font-weight: bold;
+}
+.percentc:hover {
+  color: #a166ee;
+  font-weight: bold;
+}
+</style>
