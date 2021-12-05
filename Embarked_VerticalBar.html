@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Port of Embarkment</title>
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+<table class="graph">
+	<caption><u>Embarkment Port Chart</u></caption>
+	<thead>
+		<tr>
+			<th scope="col">Item</th>
+			<th scope="col">Percent</th>
+		</tr>
+	</thead><tbody>
+		<tr style="height:68%">
+			<th scope="row">Port S</th>
+			<td><span>68%</span></td>
+		</tr>
+		<tr style="height:9%">
+			<th scope="row">Port Q</th>
+			<td><span>9%</span></td>
+		</tr>
+		<tr style="height:23%">
+			<th scope="row">Port C</th>
+			<td><span>23%</span></td>
+		</tr>
+	</tbody>
+</table>
+<div class="back">
+	<button class="btnback"><a href="https://ktea12.github.io/Front%20Web.html">GO BACK</a></button>
+  </div>
+</body>
+</html>
+
+<style>
+	html, body, table, input, select, textarea{
+	background-color: lightblue;
+  }
+  
+  .graph {
+	  margin-bottom: 1em;
+	font: normal 100%/150% times new roman,sans-serif;
+  }
+  
+  .graph caption {
+	  font: bold 150%/120% times new roman,sans-serif;
+	  padding-bottom: 0.5em;
+  }
+  
+  @supports (display:grid) {
+  @media (min-width:32em) {
+  
+		  .graph {
+			  display: block;
+		width: 600px;
+		height: 300px;
+		  }
+  
+		  .graph caption {
+			  display: block;
+		  }
+  
+		  .graph thead {
+			  display: none;
+		  }
+  
+		  .graph tbody {
+			  position: relative;
+			  display: grid;
+			  grid-template-columns: repeat(auto-fit, minmax(2em, 1fr));
+			  column-gap: 10%;
+			  align-items: end;
+			  height: 100%;
+			  margin: 1em 1em 1em 1em;
+			  padding: 0 5em;
+			  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+			  background:
+		repeating-linear-gradient(
+				  180deg,
+				  rgba(37, 21, 126, 0.692) 0,
+				  rgba(37, 21, 126, 0.7) 0,
+				  transparent 1px,
+				  transparent 20%
+			  );
+		  }
+  
+		  .graph tr {
+			  position: relative;
+			  display: block;
+		  }
+  
+		  .graph th, .graph td {
+			  display: block;
+			  text-align: center;
+		  }
+  
+		  .graph tbody th {
+			  position: absolute;
+			  width: 100%;
+			  font-weight: normal;
+			  text-align: center;
+		  }
+  
+		  .graph tbody th after {
+			  content: "";
+		  }
+  
+		  .graph td {
+			  width: 100%;
+			  height: 100%;
+			  background: rgb(146, 105, 199);
+			  border-radius: 0.5em 0.5em 0.5em 0.5em;
+			  transition: 0.3s;
+		  }
+  
+		  .graph tr:hover td {
+			  opacity: 0.8;
+		  }
+  
+		  .graph td span {
+			  overflow: hidden;
+			  position: absolute;
+			  left: 50%;
+			  top: 50%;
+			  width: 0;
+			  padding: 0.5em 0;
+			  margin: -1em 0 0;
+			  font: normal 85%/120% arial,helvetica,sans-serif;
+			  font-weight: bold;
+			  opacity: 0;
+			  transition: opacity 0.3s;
+		color: white;
+		  }
+  
+		  .toggleGraph:checked + table td span,
+		  .graph tr:hover td span {
+			  width: 4em;
+			  margin-left: -2em;
+			  opacity: 1;
+		  }
+	  }
+
+.btnback {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border: none;
+	background-color: lightblue;
+	margin: 10px 10px 10px 10px;
+	padding: 5px 10px;
+	cursor: pointer;
+  }
+  
+.btnback:hover {
+	background: rgb(255, 255, 255, 0.7);
+  }
+</style>
