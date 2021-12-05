@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passenger Sexes</title>
+</head>
+<body>
+<div class="welcome">
+<br>
+  <h1>
+<u>Sexes of the Passengers</u>
+</h1>
+  <button class="btnWomen"><h2>Women: 36%</h2></button>
+<br>
+  <button class="btnMen"><h2>Men: 64%</h2></button>
+<div class="back">
+  <button class="btnback"><a href="https://ktea12.github.io/Front%20Web.html">GO BACK</a></button>
+</div>
+</div>
+
+  <div class="container">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+  </div>
+  
+</body>
+</html>
+
+<style>
+  * {
+  margin: 30px;
+  padding: 0px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: lightblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0px 250px;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.layer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  transform-origin: 0px 250px;
+  top: 0;
+  left: 0;
+}
+
+.layer:nth-child(2) {
+  background-color: rgb(253, 115, 184);
+  transform: translateX(250px) rotate(0deg);
+}
+
+.layer:nth-child(2)::before {
+  transform: rotate(160deg);
+}
+
+.layer:nth-child(3) {
+  background-color: rgb(0, 161, 161);
+  transform: translateX(250px) rotate(230deg);
+}
+
+.layer:nth-child(3)::before {
+  transform: rotate(180deg);
+}
+
+.layer:nth-child(4) {
+  background-color: rgb(0, 161, 161);
+  transform: translateX(250px) rotate(180deg);
+}
+
+.layer:nth-child(4)::before {
+  transform: rotate(20deg);
+}
+    
+a { color: rgb(44, 45, 121); }
+
+.btnWomen {
+  border: none;
+  background-color: hotpink;
+  padding: 5px 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btnMen {
+  border: none;
+  background-color: darkcyan;
+  padding: 5px 56px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btnback {
+  border: none;
+  background-color: lightblue;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btnWomen:hover {
+  background: rgb(255, 132, 194);
+}
+
+.btnMen:hover {
+  background: rgb(0, 175, 175);
+}
+
+.btnback:hover {
+  background: rgb(255, 255, 255, 0.7);
+}
+</style>
