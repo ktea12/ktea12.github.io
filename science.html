@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Science</title>
+<link rel="stylesheet" type="text/css" href="">
+</head>
+<style>
+h1 {text-align: center;}
+</style>  <!--- CSS for aligning h1 to the center --->
+<body> 
+  <br>
+  <h1><u>Scientific Discovery</u></h1> <!--- underlining the text using <u></u> --->
+  <div class="parent">
+    <div class="child grid-item"><img src="https://i.postimg.cc/cHMBdnBg/science-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/9FHdCNyn/equal-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/gjFZcnLZ/every-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/v8hYZ4nw/about-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/503Vyr6S/we-svg.png"></div>  <!--- creating a div for icon, icon uses img scr and the image url is poster here --->
+    <div class="child grid-item"><img src="https://i.postimg.cc/rm6mx7y6/cycle-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/XYm76tCZ/mobile-phone-svg.png"></div>
+    <div class="child grid-item">Science</div>  <!--- creating div for the reading words, also utilizes the child class from css --->
+    <div class="child grid-item">is</div>
+    <div class="child grid-item">all</div>
+    <div class="child grid-item">around</div>
+    <div class="child grid-item">us.</div>
+    <div class="child grid-item">Bicycles,</div>
+    <div class="child grid-item">phones,</div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/cJ7qkzMG/car-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/cCgX2gyt/computer-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/Qx5rWV9M/light-bulb-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/9FHdCNyn/equal-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/gjFZcnLZ/every-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/cHMBdnBg/science-svg.png"></div>
+    <div class="child grid-item"><img src="https://i.postimg.cc/bY7788Cf/find-svg.png"></div>
+    <div class="child grid-item">cars,</div>
+    <div class="child grid-item">computers,</div>
+    <div class="child grid-item">lights,</div>
+    <div class="child grid-item">are</div>
+    <div class="child grid-item">all</div>
+    <div class="child grid-item">scientific</div>
+    <div class="child grid-item">discoveries.</div>
+  </div>
+  <div class="footer">
+    <a href="https://ktea12.github.io/symbol.html">Back to Reading & Symbols</a>
+  </div>
+</body>
+<style>
+html, head, body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* fixed background and no repetition */
+  background-color: lightyellow;  /* set background */
+  background-image: linear-gradient(lightyellow, lightblue);  /* to make a gradient background */
+}
+
+.parent { /* parent class of the grid */
+    display: grid; /* the reading text will be put inside a grid so that it is easier to put the icons on top of it */
+    grid-gap: 10px;
+    grid-template-columns: repeat(7, 1fr);  /* repeating 7 columns for the grid */
+}
+.child { /* child class of the grid. the text will be put inside the child class */
+    height: 2px; /* adjusting height and width of the inside grid  */
+    width: 50px;
+}
+.grid-item {
+    padding: 45px;
+    font-size: 20px; /* adjusting the padding, font size, and text alignment within the grid */
+    text-align: center;
+}
+.child:hover { /* will highlight the child class of the grid when it hovers, making it look like the text and icon is highlighted */
+  background-color: rgba(255, 176, 180, 0.753);
+} /* "why use a hover to highlight the text and icon?" this will aid those with learning disabilities or difficulties 
+so that they can focus on the hovering text without being overwhelmed by other icons/texts. */
+
+.footer{ /* back button css */
+  height: 30px;
+  width: 100%; /* so it fills the whole screen */
+  background-color: rgba(245, 245, 245, 0.3);
+  text-align: center;
+  position: absolute;
+  bottom: 0; /* to position the back button on the very bottom */
+}
+
+.footer:hover{ /* changes color on back button when it hovers */
+  background-color: rgba(255, 176, 180, 0.753);
+}
+</style>
+</html>
