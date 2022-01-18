@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reading & Symbols</title>
+  <link rel="stylesheet" type="text/css" href="">
+</head>
+<style>
+h1 {text-align: center;} 
+body {text-align: center;}
+</style> <!--- CSS centering the h1 and body text --->
+<h1>
+<span class="bolded">Pick A Story!</span> <!--- using class="bolded" to make the title bold --->
+<br>
+</h1>
+<body>
+
+<a href=""><button class="button button1">SCIENCE</button></a> <!--- creating buttons that connect with each reading themes --->
+<br>
+<br>
+<a href=""><button class="button button2">PEOPLE</button></a>
+<br>
+<br>
+<a href=""><button class="button button3">WORLD</button></a>
+<br>
+<br>
+<a href=""><button class="button button4">BEDTIME  STORY</button></a>
+
+</body>
+<style>
+  html, head, body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;  /* fixed background and no repetition */
+  background-color: lightyellow;  /* set background */
+  background-image: linear-gradient(lightyellow, lightblue);  /* to make a gradient background */
+}
+
+.button {
+  font-family: "Times New Roman", Times, serif;  /* setting the font of button to times new roman */
+  letter-spacing: 5px;
+  word-spacing: 10px;  /* letter and word spacing for decorative purposes */
+  border: 1px;
+  padding: 16px 250px;  /* button border and padding */
+  text-align: center;  /* aligning the text inside button to the center */
+  text-decoration: none;
+  display: inline-block;  /* display an element as an inline-level block container */
+  font-size: 16px;
+  margin: 4px 12px;
+  transition-duration: 0.4s;  /* transition time for hovering */
+  cursor: pointer;  /* turn cursor into pointer when hovering the button*/
+}
+
+.button1 {
+  background-image: url("https://i.postimg.cc/Sxw0pHyv/sciencebackground.jpg");  /* importing image using image url for button background */
+  color: black;   /* setting default font color */
+  border: 2px solid #008CBA;  /* border and set border color */
+}
+
+.button1:hover {
+  color: red; /* font color for when we hover button 1 (science) */
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.2);  /* create a shadow when button is hovered */
+}
+
+.button2 {
+  background-image: url("https://i.postimg.cc/25MXWWq9/people.jpg");
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  color: purple; /* font color for when we hover button 1 (people) */
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button3 {
+  background-image: url("https://i.postimg.cc/pV41r4hQ/worldbackground.jpg");
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.button3:hover {
+  color: lightblue; /* font color for when we hover button 3 (world) */
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button4 {
+  background-image: url("https://i.postimg.cc/WpYCctw4/bluecloud.jpg");
+  color: white;
+  border: 2px solid #008CBA;
+}
+
+.button4:hover {
+  color: yellow; /* font color for when we hover button 4 (bedtime story) */
+  box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+</html>
